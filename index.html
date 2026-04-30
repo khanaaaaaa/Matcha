@@ -6,34 +6,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Matcha</h1>
-    <p id="moves">Score: 0</p>
-    <div id="grid">
-        <div class="cell" id="c0"></div>
-        <div class="cell" id="c1"></div>
-        <div class="cell" id="c2"></div>
-        <div class="cell" id="c3"></div>
-        <div class="cell" id="c4"></div>
-        <div class="cell" id="c5"></div>
-        <div class="cell" id="c6"></div>
-        <div class="cell" id="c7"></div>
-        <div class="cell" id="c8"></div>
-        <div class="cell" id="c9"></div>
-        <div class="cell" id="c10"></div>
-        <div class="cell" id="c11"></div>
-        <div class="cell" id="c12"></div>
-        <div class="cell" id="c13"></div>
-        <div class="cell" id="c14"></div>
-        <div class="cell" id="c15"></div>
-    </div>
-    <div id="controls">
-        <button id="btn-up">▲</button>
-        <div>
-            <button id="btn-left">◀</button>
-            <button id="btn-down">▼</button>
-            <button id="btn-right">▶</button>
+    <div id="scanlines"></div>
+
+    <div id="console-frame">
+        <div id="screen">
+            <div id="header">
+                <div id="logo">MATCHA</div>
+                <div id="score-box">
+                    <span id="score-label">SCORE</span>
+                    <span id="score">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="grid">
+            <div class="cell" id="c0"></div>
+            <div class="cell" id="c1"></div>
+            <div class="cell" id="c2"></div>
+            <div class="cell" id="c3"></div>
+            <div class="cell" id="c4"></div>
+            <div class="cell" id="c5"></div>
+            <div class="cell" id="c6"></div>
+            <div class="cell" id="c7"></div>
+            <div class="cell" id="c8"></div>
+            <div class="cell" id="c9"></div>
+            <div class="cell" id="c10"></div>
+            <div class="cell" id="c11"></div>
+            <div class="cell" id="c12"></div>
+            <div class="cell" id="c13"></div>
+            <div class="cell" id="c14"></div>
+            <div class="cell" id="c15"></div>
+        </div>
+
+    <div id="ticker">★ PUSH NUMBERS TOGETHER TO MERGE ★ </div> 
+     <div id="controls-panel">
+            <div id="dpad">
+                <button class="dpad-btn" id="btn-up">▲</button>
+                <div class="dpad-row">
+                    <button class="dpad-btn" id="btn-left">◀</button>
+                    <div class="dpad-center"></div>
+                    <button class="dpad-btn" id="btn-right">▶</button>
+                </div>
+                <button class="dpad-btn" id="btn-down">▼</button>
+            </div>
+            <button id="btn-restart">NEW GAME</button>
         </div>
     </div>
+    
     <button id="btn-restart">Restart</button>
     <script src="script.js"></script>
 </body>

@@ -2,14 +2,39 @@
 <html lan="en">
 <head>
     <meta charset="UTF-8">
-    <title>Memory Match</title>
+    <title>Matcha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Matcha</h1>
-    <p id="moves">Moves: 0</p>
-    <div id="grid"></div>
-    <button onclick="init()">Restart</button>
+    <p id="moves">Score: 0</p>
+    <div id="grid">
+        <div class="cell" id="c0"></div>
+        <div class="cell" id="c1"></div>
+        <div class="cell" id="c2"></div>
+        <div class="cell" id="c3"></div>
+        <div class="cell" id="c4"></div>
+        <div class="cell" id="c5"></div>
+        <div class="cell" id="c6"></div>
+        <div class="cell" id="c7"></div>
+        <div class="cell" id="c8"></div>
+        <div class="cell" id="c9"></div>
+        <div class="cell" id="c10"></div>
+        <div class="cell" id="c11"></div>
+        <div class="cell" id="c12"></div>
+        <div class="cell" id="c13"></div>
+        <div class="cell" id="c14"></div>
+        <div class="cell" id="c15"></div>
+    </div>
+    <div id="controls">
+        <button id="btn-up">▲</button>
+        <div>
+            <button id="btn-left">◀</button>
+            <button id="btn-down">▼</button>
+            <button id="btn-right">▶</button>
+        </div>
+    </div>
+    <button id="btn-restart">Restart</button>
     <script src="script.js"></script>
 </body>
 </html>

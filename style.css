@@ -77,6 +77,9 @@ body {
     grid-template-columns: repeat(4, 90px);
     grid-template-rows: repeat(4, 90px);
     gap: 8px;
+    padding: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
 }
 
 .cell {
@@ -118,8 +121,8 @@ body {
 
 .cell [data-val="16"] { 
     background: #7a1a1a;
-    border-color: #ff33ff;
-    color: #ffaaff;
+    border-color: #ff3333;
+    color: #ffcccc;
     text-shadow: 0 0 6px #ff0000;
 }
 
